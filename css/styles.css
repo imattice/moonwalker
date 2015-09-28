@@ -15,3 +15,47 @@ body {
     text-transform: uppercase;
     display: inline;
 }
+
+.navbar {
+    margin: 0;
+    padding-top: 5px;
+}
+
+.navbar-left {
+    margin-left: 30px;
+}
+
+.navbar-right {
+    margin-right: 30px;
+}
+
+.jumbotron {
+    background-image: url('img/space-gif.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    color: white;
+    margin: 0;
+}
+
+.destinations {
+    /*background-color: black;*/
+    margin: 0;
+    width: 100%;
+}
+
+ul {
+    list-style-type:none;
+}
+
+.destinations img {
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+}
+
+.destination-list > li {
+    height: 200px;
+    width: 200px;
+    overflow:hidden;
+}
