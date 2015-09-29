@@ -7,8 +7,20 @@
     </div>
 
     <div class="navbar-right">
-        <h4 class = 'headline-button'>Login</h4>
-        <h4 class = 'headline-button'>Sign Up</h4>
-        <h4 class = 'headline-button'>Submit a Mission</h4>
+      <!-- testing button to change login status to false -->
+      <button ng-click="JumboFactory.login = false">false</button>
+
+      <!-- testing button to change login status to true -->
+      <button ng-click="JumboFactory.login = true" >true</button>
+
+      <!-- testing button to show login status in console-->
+      <button ng-click="JumboFactory.showLogin()">show</button>
+
+      <!-- button that we actually want to change login status with -->
+      <h4 login class = 'headline-button' ng-click="JumboFactory.login=true">Login</h4>
+      <span>&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;</span>
+      <h4 login class = 'headline-button'>Sign Up</h4>
+      <span>&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;</span>
+      <h4 class = 'headline-button'>Submit a Mission</h4>
     </div>
 </nav>

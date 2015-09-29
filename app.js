@@ -10,13 +10,12 @@ moonwalker.config(function($stateProvider, $urlRouterProvider) {
                 controller: 'HeaderCtrl'
             },
             'body': {
-                templateUrl: 'partials/home.html',
+                templateUrl: 'partials/home.html'
             },
             'footer': {
               templateUrl: 'partials/footer.html',
+              controller: 'FooterCtrl'
             },
         }
     });
-
-
 });

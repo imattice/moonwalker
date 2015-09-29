@@ -29,17 +29,26 @@ body {
     margin-right: 30px;
 }
 
-.jumbotron {
+
+/*jumbotron stylings*/
+.default {
     background-image: url('img/space-gif.gif');
     background-repeat: no-repeat;
     background-size: cover;
     height: 500px;
     color: white;
-    /*margin: 0;*/
+    border-bottom: 3px solid black;
 }
 
+.login {
+  background-size: cover;
+  height: 500px;
+  color: white;
+  border-bottom: 3px solid black;
+}
+/* ---- */
+
 .destinations {
-    /*background-color: black;*/
     width: 100%;
 }
 
@@ -52,40 +61,35 @@ ul {
     width: 170px;
     border-radius: 50%;
     background-color: rgba(63, 174, 191, .5);
-    border: 5px solid #3FAEBF;
     color:white;
     padding-top: 15%;
     text-align: center;
+    border: 4px solid black;
 }
 
-hr {
-  /*padding: 0px;*/
+.active {
+  color: blue;
+  text-shadow: 0px 0px 40px;
+}
+
+.dest-rule {
   margin: 13px;
   visibility: hidden;
 }
 
 .destination-name {
-  font-size: 30px;
+  font-size: 25px;
   visibility: hidden;
 }
 
 .mission-btn {
   visibility: hidden;
+  border: none;
+  padding: 5px;
 }
 
-/*.destination-list > li {
-    height: 200px;
-    width: 200px;
-    overflow:hidden;
-}*/
-
 #moon {
-  background:
-    linear-gradient(
-      rgba(63, 174, 191, .5),
-      rgba(63, 174, 191, .5)
-      ),
-    url('img/planets/moon.jpg');
+  background: url('img/planets/moon2.jpg');
   background-size: cover;
   margin-left:auto;
   margin-right:auto;
@@ -94,12 +98,7 @@ hr {
 }
 
 #sun {
-  background:
-    linear-gradient(
-        rgba(63, 174, 191, .5),
-        rgba(63, 174, 191, .5)
-      ),
-      url('img/planets/sun.jpg');
+  background: url('img/planets/sun.jpg');
   background-size: cover;
   margin-left:auto;
   margin-right:auto;
@@ -109,12 +108,7 @@ hr {
 }
 
 #saturn {
-  background:
-    linear-gradient(
-      rgba(63, 174, 191, .5),
-      rgba(63, 174, 191, .5)
-      ),
-       url('img/planets/saturn.jpg');
+  background: url('img/planets/saturn.jpg');
   background-size: 150%;
   background-repeat: no-repeat;
   background-color: black;
@@ -125,12 +119,7 @@ hr {
 }
 
 #deep-space {
-  background:
-    linear-gradient(
-      rgba(63, 174, 191, .5),
-      rgba(63, 174, 191, .5)
-      ),
-       url('img/planets/deep-space.jpeg');
+  background: url('img/planets/deep-space.jpeg');
   background-size: cover;
   margin-left:auto;
   margin-right:auto;
@@ -139,12 +128,7 @@ hr {
 }
 
 #kepler {
-  background:
-    linear-gradient(
-      rgba(63, 174, 191, .5),
-      rgba(63, 174, 191, .5)
-      ),
-       url('img/planets/kepler.jpg');
+  background: url('img/planets/kepler.jpg');
   background-size: contain;
   background-repeat: no-repeat;
   background-color: black;
@@ -156,12 +140,7 @@ hr {
 }
 
 #pluto {
-  background:
-    linear-gradient(
-      rgba(63, 174, 191, .5),
-      rgba(63, 174, 191, .5)
-      ),
-       url('img/planets/pluto.jpg');
+  background: url('img/planets/pluto.jpg');
   background-size: cover;
   margin-left:auto;
   margin-right:auto;
@@ -171,12 +150,7 @@ hr {
 }
 
 #nebula {
-  background:
-    linear-gradient(
-      rgba(63, 174, 191, .5),
-      rgba(63, 174, 191, .5)
-      ),
-       url('img/planets/nebula.jpg');
+  background: url('img/planets/nebula.jpg');
   background-size: cover;
   margin-left:auto;
   margin-right:auto;
@@ -186,34 +160,11 @@ hr {
 }
 
 #mars {
-  background:
-    linear-gradient(
-      rgba(63, 174, 191, .5),
-      rgba(63, 174, 191, .5)
-      ),
-       url('img/planets/mars.jpg');
+  background: url('img/planets/mars.jpg');
   background-size: cover;
   margin-left:auto;
   margin-right:auto;
   display: block;
   margin-bottom: 5%;
 
-}
-
-#test {
-  height: 200px;
-  width: 500px;
-  background-color: red;
-}
-
-#baby {
-  height: 100px;
-  width: 100px;
-  background-color: green;
-}
-
-#teen {
-  height: 100px;
-  width: 100px;
-  background-color: green;
 }
