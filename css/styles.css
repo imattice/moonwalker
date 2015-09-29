@@ -53,25 +53,25 @@ ul {
     border-radius: 50%;
     background-color: rgba(63, 174, 191, .5);
     border: 5px solid #3FAEBF;
+    color:white;
+    padding-top: 15%;
+    text-align: center;
 }
 
 hr {
   /*padding: 0px;*/
   margin: 13px;
+  visibility: hidden;
 }
 
 .destination-name {
   font-size: 30px;
-
+  visibility: hidden;
 }
 
-.destination-overlay {
-  color:white;
-  padding-top: 25%;
-  /*background-color:green;*/
-  text-align: center;
-
-  }
+.mission-btn {
+  visibility: hidden;
+}
 
 /*.destination-list > li {
     height: 200px;
@@ -198,4 +198,22 @@ hr {
   display: block;
   margin-bottom: 5%;
 
+}
+
+#test {
+  height: 200px;
+  width: 500px;
+  background-color: red;
+}
+
+#baby {
+  height: 100px;
+  width: 100px;
+  background-color: green;
+}
+
+#teen {
+  height: 100px;
+  width: 100px;
+  background-color: green;
 }
