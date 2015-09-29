@@ -12,6 +12,9 @@ moonwalker.config(function($stateProvider, $urlRouterProvider) {
             'body': {
                 templateUrl: 'partials/home.html',
             },
+            'footer': {
+              templateUrl: 'partials/footer.html',
+            },
         }
     });
 
